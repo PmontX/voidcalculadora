@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque - Grand Chase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Controle de Estoque - Grand Chase</h1>
+  <div class="container">
+    <!-- Exemplo de 3 personagens, pode ser expandido até 23 -->
+    <div class="personagem" style="background-image: url('personagens/elesis.jpg');" onclick="window.location.href='fragmentos.html?personagem=1'"></div>
+    <div class="personagem" style="background-image: url('personagens/lire.jpg');" onclick="window.location.href='fragmentos.html?personagem=2'"></div>
+    <div class="personagem" style="background-image: url('personagens/Arme.jpg');" onclick="window.location.href='fragmentos.html?personagem=3'"></div>
+    <div class="personagem" style="background-image: url('personagens/lass.jpg');" onclick="window.location.href='fragmentos.html?personagem=4'"></div>
+    <div class="personagem" style="background-image: url('personagens/Ryan.jpg');" onclick="window.location.href='fragmentos.html?personagem=5'"></div>
+    <div class="personagem" style="background-image: url('personagens/ronan.jpg');" onclick="window.location.href='fragmentos.html?personagem=6'"></div>
+    <div class="personagem" style="background-image: url('personagens/Amu.jpg');" onclick="window.location.href='fragmentos.html?personagem=7'"></div>
+    <div class="personagem" style="background-image: url('personagens/jin.jpg');" onclick="window.location.href='fragmentos.html?personagem=8'"></div>
+    <div class="personagem" style="background-image: url('personagens/sieg.jpg');" onclick="window.location.href='fragmentos.html?personagem=9'"></div>
+    <div class="personagem" style="background-image: url('personagens/Mari.jpg');" onclick="window.location.href='fragmentos.html?personagem=10'"></div>
+    <div class="personagem" style="background-image: url('personagens/Dio.jpg');" onclick="window.location.href='fragmentos.html?personagem=11'"></div>
+    <div class="personagem" style="background-image: url('personagens/Zero.jpg');" onclick="window.location.href='fragmentos.html?personagem=12'"></div>
+    <div class="personagem" style="background-image: url('personagens/Rey.jpg');" onclick="window.location.href='fragmentos.html?personagem=13'"></div>
+    <div class="personagem" style="background-image: url('personagens/Lupus.jpg');" onclick="window.location.href='fragmentos.html?personagem=14'"></div>
+    <div class="personagem" style="background-image: url('personagens/lin.jpg');" onclick="window.location.href='fragmentos.html?personagem=15'"></div>
+    <div class="personagem" style="background-image: url('personagens/Azin.jpg');" onclick="window.location.href='fragmentos.html?personagem=16'"></div>
+    <div class="personagem" style="background-image: url('personagens/holy.jpg');" onclick="window.location.href='fragmentos.html?personagem=17'"></div>
+    <div class="personagem" style="background-image: url('personagens/edel.jpg');" onclick="window.location.href='fragmentos.html?personagem=18'"></div>
+    <div class="personagem" style="background-image: url('personagens/Veigas.jpg');" onclick="window.location.href='fragmentos.html?personagem=19'"></div>
+    <div class="personagem" style="background-image: url('personagens/decane.jpg');" onclick="window.location.href='fragmentos.html?personagem=20'"></div>
+    <div class="personagem" style="background-image: url('personagens/Ai.jpg');" onclick="window.location.href='fragmentos.html?personagem=21'"></div>
+    <div class="personagem" style="background-image: url('personagens/KALIA.jpg');" onclick="window.location.href='fragmentos.html?personagem=22'"></div>
+    <div class="personagem" style="background-image: url('personagens/uno.jpg');" onclick="window.location.href='fragmentos.html?personagem=23'"></div>
+    <!-- Continue até 23 personagens -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<div class="fragmento-box">
+  <h3>Conversor Avançado</h3>
+  <p>Insira as partes do vazio:</p>
+  <label for="partes-invasao">Partes de Invasão:</label>
+  <input type="number" id="partes-invasao" value="0" min="0">
+  
+  <label for="partes-contaminacao">Partes de Contaminação:</label>
+  <input type="number" id="partes-contaminacao" value="0" min="0">
+
+  <button onclick="calcularFragmentosAvancado()">Calcular</button>
+
+  <div id="resultado-fragmentos">
+      <!-- Os resultados aparecerão aqui -->
+  </div>
+</div>
+</div>

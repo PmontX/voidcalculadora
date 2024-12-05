@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Fragmentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Logo">
+    </a>
+    <h1>Calculadora de Fragmentos</h1>
+  </header>
+  
+
+  <div class="form-container">
+    <label for="fragmento">Escolha o tipo de RAID:</label>
+    <select id="fragmento">
+      <option value="invasao">Invasão</option>
+      <option value="contaminacao">Contaminação</option>
+      <option value="pesadelo">Pesadelo</option>
+    </select><br><br>
+
+    <label for="quantidade">Quantidade de PARTES do fragmento:</label>
+    <input type="number" id="quantidade" value="0" min="0" class="input-box"><br><br>
+
+    <button onclick="calcularFragmentos()">Calcular</button>
+  </div>
+
+  <!-- Caixas de resultados específicas para cada fragmento -->
+  <div class="fragmento-box">
+    <h3>Invasão</h3>
+    <p id="invasao-result">Fragmentos: 0</p>
+  </div>
+
+  <div class="fragmento-box">
+    <h3>Contaminação</h3>
+    <p id="contaminacao-result">Fragmentos: 0</p>
+  </div>
+
+  <div class="fragmento-box">
+    <h3>Pesadelo</h3>
+    <p id="pesadelo-result">Fragmentos: 0</p>
+  </div>
+
+  <div class="diarias-container">
+    <h2>Diárias e Semanais</h2>
+    <div class="checkbox-group">
+      <h3>Diárias (Resetadas diariamente):</h3>
+      <label><input type="checkbox" id="fornalha"> Fornalha</label><br>
+      <label><input type="checkbox" id="altar-da-ruina"> Altar da Ruina</label><br>
+      <label><input type="checkbox" id="torre-das-ilusoes"> Torre das Ilusões</label><br>
+      <label><input type="checkbox" id="berkas"> Berkas</label><br>
+    </div>
+
+    <div class="checkbox-group">
+      <h3>Semanais (Resetados na segunda, quarta e sexta):</h3>
+      <label><input type="checkbox" id="invasao-semanal"> Invasão (Segunda-feira)</label><br>
+      <label><input type="checkbox" id="contaminacao-semanal"> Contaminação (Quarta-feira)</label><br>
+      <label><input type="checkbox" id="pesadelo-semanal"> Pesadelo (Sexta-feira)</label><br>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

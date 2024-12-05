@@ -1,0 +1,211 @@
+/* Reset de margin e padding para um visual consistente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8a2be2, #4b0082); /* Gradiente de roxo */
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  align-items: center; /* Alinha logo e título verticalmente */
+  justify-content: center; /* Centraliza logo e título */
+  gap: 20px; /* Espaço entre logo e título */
+  padding: 20px;
+}
+
+/* Estilo do link do logo */
+a.logo {
+  display: inline-block; /* Garante que o link comporte a imagem como um bloco */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo do logo */
+.logo img {
+  width: 100px; /* Ajuste o tamanho do logo */
+  height: auto; 
+  border-radius: 50%; /* Para um logo circular, se necessário */
+  cursor: pointer; /* Mostra o cursor de "mãozinha" para indicar que é clicável */
+}
+
+/* Estilo do título */
+h1 {
+  font-family: "Copperplate Gothic", "Arial", sans-serif;
+  font-size: 48px;
+  color: #ffd700; /* Cor dourada para destacar o título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Hover no logo para efeito visual (opcional) */
+a.logo:hover img {
+  transform: scale(1.1); /* Efeito de aumentar o logo ao passar o mouse */
+  transition: transform 0.3s ease;
+}
+
+/* Estilo do título */
+h1 {
+  font-family: "Copperplate Gothic", "Arial", sans-serif;
+  font-size: 48px;
+  color: #ffd700; /* Cor dourada para destacar o título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0; /* Remove a margem inferior do título */
+  text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.personagem {
+  width: 100px;
+  height: 100px;
+  background-size: cover; /* Ajusta a imagem ao tamanho da div */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  border-radius: 80%;
+  cursor: pointer;
+}
+
+/* Cabeçalho principal */
+h1 {
+  font-family: "Copperplate Gothic", "Arial", sans-serif;
+  font-size: 48px;
+  color: #ffd700; /* Cor dourada para destacar o título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+}
+
+/* Estilo do formulário */
+.form-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+  color: #ff6347; /* Cor laranja avermelhada */
+}
+
+select,
+input[type="number"] {
+  background: #1e1e1e;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  color: #ffd700;
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+select:focus,
+input[type="number"]:focus {
+  border-color: #4b0082;
+  outline: none;
+}
+
+/* Botão de calcular */
+button {
+  background: #4b0082; /* Cor roxa */
+  border: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background: #ffd700; /* Cor dourada ao passar o mouse */
+  color: #4b0082;
+}
+
+/* Caixas de resultado */
+.fragmento-box {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Caixa de diárias e semanais */
+.diarias-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.checkbox-group {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  color: #ff6347;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .fragmento-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
